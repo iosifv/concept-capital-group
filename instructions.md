@@ -1,18 +1,47 @@
-We need to build a website that will represent the group of investors who are investing in the company "Concept Capital Group LTD"
+Prompt:
 
-The site will need to contain:
-a description
-a link to a whatsapp group and QR code
-a small news section which can be static html which will be updated manually
-a small links section which can be static html which will be updated manually
-contact info
+You are an expert in SEO-focused static website creation.
+Build a simple HTML + CSS website to be hosted on Vercel. The site will represent an unofficial grassroots community of investors in "Concept Capital Group LTD" (concept-capital-group.com). This website will live at concept-capital-group.xyz.
 
-The site will be representing an unofficial group of people and will not be affiliated with Concept Capital Group LTD
-The website needs to be extremely well optimised for SEO such that anyone who searches for a string like "concept capital group" on google will get this as top result
+Purpose:
 
-Context:
-This site and whatsapp group will be dedicated to people who invested in the company "Concept Capital Group LTD" which have their website at concept-capital-group.com and the website we are building will be at concept-capital-group.xyz
+Help connect investors who have invested in Concept Capital Group LTD but are otherwise unknown to each other.
 
-Concept capital group is currently not paying their investors back. This website will be a bridge to connect investors who are otherwise unknown to each other so that we can organise ourselves and trade ideas and advice.
+Provide a bridge for these investors to share ideas and advice through a WhatsApp community.
 
-Please ask questions along the way if anything is unclear
+The site is NOT affiliated with Concept Capital Group LTD.
+
+Content Requirements:
+
+Description section – factual, neutral tone, explaining the purpose of the site and WhatsApp group.
+
+WhatsApp join link & QR code – prominently placed.
+Link: https://chat.whatsapp.com/KuPii12wbyOIQ0rFcPzSWV?mode=ac_t
+
+Small news section – static HTML, manually updatable.
+
+Small links section – static HTML, manually updatable.
+
+Disclaimer – clearly stating this is an unofficial site, not affiliated with Concept Capital Group LTD.
+
+Optional SEO article page – separate HTML page with long-form SEO-friendly content about investment recovery, investor rights, and related terms. Include internal linking between the homepage and the SEO article page.
+
+Design Requirements:
+
+Branding: grassroots community feel (simple, approachable design).
+
+Layout: responsive, clean, mobile-friendly.
+
+Extremely well-optimized for SEO for keywords like "Concept Capital Group", "Concept Capital Group LTD investors", "Concept Capital Group investment issues".
+
+Include proper <title>, <meta> descriptions, <h1>, <h2> hierarchy, alt text for images, and Open Graph tags.
+
+Optimize for Google indexing with semantic HTML and fast load times.
+
+Output:
+
+Provide full HTML and CSS code for the homepage and the SEO article page (as separate files).
+
+Include placeholder text/images where needed (e.g., QR code).
+
+Ensure easy manual updates to the news and links sections.

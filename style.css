@@ -1,106 +1,149 @@
+/* Lively grassroots feel: warmer palette, softer contrasts, friendly typography */
+:root {
+  --bg: #fdf7f1; /* warm light background */
+  --card: #ffffff;
+  --accent: #e85d04; /* vibrant orange-red */
+  --accent-dark: #9b2c06;
+  --muted: #5f6472;
+  --max-w: 900px;
+  --radius: 14px;
+  --pad: 20px;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  margin: 0;
+  background: var(--bg);
+  color: #2d2d2d;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
 }
 
-header {
-    background: #004085;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+.container {
+  max-width: var(--max-w);
+  margin: 24px auto;
+  padding: 0 16px;
 }
 
-h1 {
-    margin: 0;
-    font-size: 2rem;
+.site-header {
+  background: linear-gradient(90deg, rgba(232,93,4,0.15), rgba(255,255,255,0));
+  padding: 26px 0;
+  border-bottom: 2px solid rgba(0,0,0,0.05);
 }
 
-.subtitle {
-    color: #cce5ff;
-    margin: 0;
+.site-header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--accent-dark);
 }
 
-main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.tagline {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 1rem;
 }
 
-section {
-    padding: 2rem 0;
-    border-bottom: 1px solid #eee;
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: var(--pad);
+  margin: 18px 0;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(0,0,0,0.04);
+  transition: transform 0.1s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-2px);
 }
 
-section:last-child {
-    border-bottom: none;
+.join-grid {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.whatsapp-cta {
+  display: inline-block;
+  padding: 14px 20px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, var(--accent), #f48c06);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(232,93,4,0.25);
+  transition: background 0.2s ease, transform 0.1s ease-in-out;
+}
+.whatsapp-cta:hover {
+  background: linear-gradient(90deg, #f48c06, var(--accent));
+  transform: scale(1.02);
+}
+
+.qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.qr img {
+  border-radius: 10px;
+  background: #fff;
+  padding: 6px;
+  border: 2px solid rgba(232,93,4,0.25);
+}
+.qr figcaption {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 8px;
 }
 
 h2 {
-    color: #004085;
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: var(--accent-dark);
 }
 
-.button {
-    display: inline-block;
-    background: #28a745;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 1rem;
+h3 {
+  color: var(--accent-dark);
 }
 
-.button:hover {
-    background: #218838;
+.small {
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
-.qr-code {
-    margin-top: 1.5rem;
+.disclaimer {
+  background: linear-gradient(0deg, #fff5eb, #ffffff);
+  border-left: 5px solid var(--accent);
 }
 
-.qr-code img {
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.site-footer {
+  padding: 20px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-top: 2px solid rgba(0,0,0,0.05);
 }
 
-#disclaimer {
-    background-color: #fff3cd;
-    padding: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ffeeba;
+code {
+  background: #fff3e6;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
 }
 
-#disclaimer h2 {
-    color: #856404;
-}
-
-footer {
+@media (max-width: 600px) {
+  .join-grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .whatsapp-cta {
+    width: 100%;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-ul li a:hover {
-    text-decoration: underline;
+  }
 }
