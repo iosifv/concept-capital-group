@@ -104,12 +104,31 @@
     <div class="container">
       <p>© <span id="year"></span> All rights reserved.</p>
       <p class="small">Site hosted at concept-capital-group.xyz • Built for investor coordination and information.</p>
+      <p>Total Visits: <span id="global-visit-count">Loading...</span></p>
     </div>
   </footer>
 
   <script>
     // Small progressive enhancement: current year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Global visit counter using Vercel Serverless Function and KV
+    document.addEventListener('DOMContentLoaded', async () => {
+      const counterElement = document.getElementById('global-visit-count');
+
+      try {
+        // Increment the count
+        const incrementResponse = await fetch('/api/count', {
+          method: 'POST',
+        });
+        const incrementData = await incrementResponse.json();
+        counterElement.textContent = incrementData.count;
+
+      } catch (error) {
+        console.error('Error incrementing visit count:', error);
+        counterElement.textContent = 'Error';
+      }
+    });
   </script>
 </body>
 </html>
