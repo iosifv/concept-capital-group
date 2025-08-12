@@ -2,12 +2,21 @@
 
 This repository hosts an unofficial website dedicated to connecting investors of Concept Capital Group LTD. The site aims to provide a platform for sharing information, discussing the ongoing situation (including the FCA investigation and allegations of an unauthorised investment scheme), and organizing as a community.
 
+**Visit the live website here:** [https://concept-capital-group.xyz/](https://concept-capital-group.xyz/)
+
 ## Project Goals
 
 *   **Information Hub:** Provide relevant news and updates regarding Concept Capital Group.
 *   **Community Building:** Facilitate connection among investors through a WhatsApp group.
 *   **SEO Optimization:** Ensure the website is easily discoverable by individuals searching for information about Concept Capital Group, including terms related to potential scams or unauthorized activities.
 *   **Disclaimer:** Clearly state the unofficial nature of the group and its independence from Concept Capital Group LTD.
+
+## Recent Updates
+
+*   **Color Palette:** Updated to a cool blue/teal/green theme.
+*   **Favicon:** Custom favicon with a red accent and exclamation mark.
+*   **Global Visit Counter:** Implemented using Redis and Vercel Serverless Functions.
+*   **Analytics:** Integrated Google Analytics and Vercel Analytics for better insights into website traffic.
 
 ## Website Sections
 
